@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="jumbo">
+        <h2>Welcome to the Froleeyo project!</h2>
+        <h3>Homepage for Froleeyo Project developement.</h3>
+        <form action="{{ url_for('about') }}">
+            {{ form.about }}
+        </form>
+        <form action="{{ url_for('search') }}">
+            {{ form.search }}
+        </form>
+    </div>
+{% endblock %}
